@@ -1,0 +1,25 @@
+CREATE INDEX "flats_society_id_idx" ON "flats" ("society_id");--> statement-breakpoint
+CREATE INDEX "flats_tower_id_idx" ON "flats" ("tower_id");--> statement-breakpoint
+CREATE INDEX "towers_society_id_idx" ON "towers" ("society_id");--> statement-breakpoint
+CREATE INDEX "visitor_requests_society_id_status_idx" ON "visitor_requests" ("society_id","status");--> statement-breakpoint
+CREATE INDEX "visitor_requests_society_id_idx" ON "visitor_requests" ("society_id");--> statement-breakpoint
+CREATE INDEX "visitor_requests_flat_id_idx" ON "visitor_requests" ("flat_id");--> statement-breakpoint
+CREATE INDEX "resident_entry_logs_society_id_idx" ON "resident_entry_logs" ("society_id");--> statement-breakpoint
+CREATE INDEX "resident_entry_logs_user_id_idx" ON "resident_entry_logs" ("user_id");--> statement-breakpoint
+CREATE INDEX "staff_directory_society_id_idx" ON "staff_directory" ("society_id");--> statement-breakpoint
+CREATE INDEX "staff_entry_logs_society_id_idx" ON "staff_entry_logs" ("society_id");--> statement-breakpoint
+CREATE INDEX "staff_entry_logs_staff_id_idx" ON "staff_entry_logs" ("staff_id");--> statement-breakpoint
+CREATE INDEX "visitor_entry_logs_visitor_request_id_idx" ON "visitor_entry_logs" ("visitor_request_id");--> statement-breakpoint
+CREATE INDEX "complaints_society_id_idx" ON "complaints" ("society_id");--> statement-breakpoint
+CREATE INDEX "complaints_flat_id_idx" ON "complaints" ("flat_id");--> statement-breakpoint
+CREATE INDEX "notices_society_id_idx" ON "notices" ("society_id");--> statement-breakpoint
+CREATE INDEX "polls_society_id_idx" ON "polls" ("society_id");--> statement-breakpoint
+CREATE INDEX "amenities_society_id_idx" ON "amenities" ("society_id");--> statement-breakpoint
+CREATE INDEX "amenity_bookings_amenity_id_idx" ON "amenity_bookings" ("amenity_id");--> statement-breakpoint
+CREATE INDEX "amenity_bookings_flat_id_idx" ON "amenity_bookings" ("flat_id");--> statement-breakpoint
+CREATE INDEX "maintenance_dues_society_id_idx" ON "maintenance_dues" ("society_id");--> statement-breakpoint
+CREATE INDEX "maintenance_dues_society_id_status_idx" ON "maintenance_dues" ("society_id","status");--> statement-breakpoint
+CREATE INDEX "payment_confirmations_due_id_idx" ON "payment_confirmations" ("due_id");--> statement-breakpoint
+CREATE INDEX "payment_confirmations_flat_id_idx" ON "payment_confirmations" ("flat_id");--> statement-breakpoint
+CREATE INDEX "society_invites_society_id_idx" ON "society_invites" ("society_id");--> statement-breakpoint
+CREATE INDEX "society_invites_invited_user_id_idx" ON "society_invites" ("invited_user_id");

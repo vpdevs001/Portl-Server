@@ -1,0 +1,1 @@
+ALTER TABLE "societies" ADD COLUMN "upi_id" varchar(100);

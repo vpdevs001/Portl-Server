@@ -1,0 +1,1 @@
+ALTER TABLE "payment_confirmations" ADD COLUMN "rejection_reason" text;
