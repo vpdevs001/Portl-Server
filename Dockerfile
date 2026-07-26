@@ -15,8 +15,8 @@ FROM base AS runner
 ENV NODE_ENV=production
 
 # Run as a non-root user
-RUN addgroup --system --gid 1001 bunjs && \
-    adduser --system --uid 1001 fastify
+RUN groupadd --system --gid 1001 bunjs && \
+    useradd --system --uid 1001 --gid bunjs fastify
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
