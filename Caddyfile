@@ -1,3 +1,3 @@
 portl.vedpandey.in {
-    reverse_proxy localhost:8080
+    reverse_proxy localhost:8000
 }

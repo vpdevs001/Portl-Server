@@ -28,7 +28,7 @@ COPY . .
 
 USER fastify
 
-EXPOSE 8080
+EXPOSE 8000
 
 # Run pending migrations, then start the server.
 CMD ["sh", "-c", "bun run db:migrate && bun index.ts"]
